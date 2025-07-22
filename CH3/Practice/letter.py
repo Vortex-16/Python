@@ -4,4 +4,3 @@ letter = '''Dear <|name|>,
             <|Date|>,Alpha Coders'''
 
 print(letter.replace("<|name|>", "Advik").replace("<|Date|>", "20/06/2025"))
-            
