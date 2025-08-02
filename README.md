@@ -21,10 +21,10 @@ This repository is a personal learning log and practice space as I explore Pytho
 - ✅ Variables and Data Types
 - ✅ Strings and String Functions
 - ✅ Lists, Tuples, Sets, and Dictionaries
-- ✅ Conditionals and Loops
-- ✅ Functions and Recursion
-- ✅ Object-Oriented Programming
-- ✅ File Handling
+- ⏳ Conditionals and Loops
+- ⏳ Functions and Recursion
+- ⏳ Object-Oriented Programming
+- ⏳ File Handling
 - ⏳ Modules and Packages
 - ⏳ Error Handling
 - ⏳ Mini Projects
