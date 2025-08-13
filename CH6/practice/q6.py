@@ -9,3 +9,5 @@ elif grade>=60:
     print("Grade C")
 else:
     print("Grade D")
+
+    print("You need to work harder.")
