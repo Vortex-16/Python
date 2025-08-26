@@ -8,11 +8,22 @@ for i in range(1, 5):
 print()
 
 
+
+
+
+
+
 #      *
 #     * *
 #    * * *
 for i in range(1, 5):
     print(" " * (5 - i) + "* " * i)
+
+
+
+
+
+
 # * * *
 #  * *
 #   *
@@ -21,6 +32,9 @@ for i in range(n):
     print(" " * i + "* " * (n - i))
 
 print()
+
+
+
 
 
 
@@ -42,6 +56,11 @@ for i in range(1, n):
     print(" " * i + "*" * (2*(n-i)-1))
 
 print()
+
+
+
+
+
 
 
 
