@@ -1,0 +1,23 @@
+# Append elements to the list
+l1=[1,2,3]
+l2=[11,12,13]
+l1.append(4)
+print(l1)
+l1.append(('5a','5b'))
+print(l1)
+l1.extend(l2)
+print(l1)
+print(l2)
+print(l1.index(11))
+l1.insert(5,'six')
+print(l1)
+l1.pop()
+print(l1)
+l1.pop(4)
+print(l1)
+l1.remove('six')
+print(l1)
+l1.reverse()
+print(l1)
+l1.sort()
+print(l1)
