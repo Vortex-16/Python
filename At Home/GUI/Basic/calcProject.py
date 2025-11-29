@@ -70,6 +70,60 @@ for r, row in enumerate(buttons):
             command=lambda v=value: btn_click(v)
         )
         btn.grid(row=r, column=c, padx=5, pady=5)
+def btn_click(value):
+    current = display_var.get()
+
+    # Clear (C)
+    if value == "C":
+        display_var.set("0")
+        return
+
+    # Delete last digit (DEL)
+    if value == "DEL":
+        if len(current) > 1:
+            display_var.set(current[:-1])
+        else:
+            display_var.set("0")
+        return
+
+    # Evaluate (=)
+    if value == "=":
+        try:
+            result = str(eval(current))
+            display_var.set(result)
+        except:
+            display_var.set("Error")
+        return
+
+    # Normal input
+    if current == "0":
+        display_var.set(value)
+    else:
+        display_var.set(current + value)
+def create_button(text):
+    # operator buttons styling
+    operators = {"/", "*", "-", "+", "%"}
+    
+    if text in operators:
+        fg = "#1f6aa5"      # blue operator color
+    elif text in {"C", "DEL"}:
+        fg = "#a51f1f"      # red for clear/delete
+    elif text == "=":
+        fg = "#17981a"      # green for equals
+    else:
+        fg = "#2c2c2c"      # number buttons (dark gray)
+    
+    return ctk.CTkButton(
+        btn_frame,
+        text=text,
+        corner_radius=40,
+        font=ctk.CTkFont(size=22, weight="bold"),
+        width=70,
+        height=70,
+        fg_color=fg,
+        hover_color="#000000",
+        command=lambda v=text: btn_click(v)
+    )
 
 
 app.mainloop()
